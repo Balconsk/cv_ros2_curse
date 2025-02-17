@@ -1,0 +1,16 @@
+gz service -s /world/default/create \
+--reqtype gz.msgs.EntityFactory \
+--reptype gz.msgs.Boolean \
+--timeout 300 \
+--req 'sdf: '\
+'"<?xml version=\"1.0\" ?>'\
+'<sdf version=\"1.6\">'\
+'<include>'\
+'<pose degrees=\"true\">1.0 0.1 0 0 0 50</pose>'\
+'<name>Object1</name>'\
+'<uri>/home/nebalcon/ros2_project/cv_ros2/src/tracking_1/resource/cereal.sdf</uri>'\
+'</include>'\
+'</sdf>" '\
+'allow_renaming: true' 
+
+
